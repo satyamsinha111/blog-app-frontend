@@ -1,0 +1,14 @@
+.blogs-wrapper {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  color: #374045;
+}
+
+hr {
+  background-color: #374045;
+  width: 100%;
+}
