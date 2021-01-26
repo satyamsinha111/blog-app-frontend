@@ -1,0 +1,11 @@
+.signin-card {
+  width: 70%;
+  padding: 30px;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

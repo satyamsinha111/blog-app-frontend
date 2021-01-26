@@ -24,23 +24,25 @@
             >{{ "Blogs" | uppercase }} <span class="sr-only">(current)</span></a
           >
         </li>
-        <!-- <li class="nav-item active">
-          <a class="nav-link text-light" [routerLink]="['']"
-            >{{ "Dashboard" | uppercase }} <span class="sr-only">(current)</span></a
+        <li class="nav-item active" *ngIf="isLoggedIn">
+          <a class="nav-link text-light" [routerLink]="['dashboard']"
+            >{{ "Dashboard" | uppercase }}
+            <span class="sr-only">(current)</span></a
           >
-        </li> -->
-        <!-- <li class="nav-item active">
+        </li>
+        <li class="nav-item active" *ngIf="isLoggedIn" (click)="Signout()">
           <a class="nav-link text-light" [routerLink]="['']"
-            >{{ "Signout" | uppercase }} <span class="sr-only">(current)</span></a
+            >{{ "Signout" | uppercase }}
+            <span class="sr-only">(current)</span></a
           >
-        </li> -->
-        <li class="nav-item active">
+        </li>
+        <li class="nav-item active" *ngIf="!isLoggedIn">
           <a class="nav-link text-light" [routerLink]="['signin']"
             >{{ "Signin" | uppercase }}
             <span class="sr-only">(current)</span></a
           >
         </li>
-        <li class="nav-item active">
+        <li class="nav-item active" *ngIf="!isLoggedIn">
           <a class="nav-link text-light" [routerLink]="['signup']"
             >{{ "Signup" | uppercase }}
             <span class="sr-only">(current)</span></a

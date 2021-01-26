@@ -1,1 +1,54 @@
-<p>signup works!</p>
+<div class="wrapper">
+  <div class="card signin-card">
+    <h3>Signup</h3>
+    <hr />
+    <form class="form-container">
+      <div class="container w-100">
+        <div class="row">
+          <div class="form-group w-100">
+            <label for="your-name">Your name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="your-name"
+              placeholder="Enter your name"
+              name="name"
+              [(ngModel)]="name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group w-100">
+            <label for="email-address">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email-address"
+              placeholder="Enter your email"
+              name="email"
+              [(ngModel)]="email"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group w-100">
+            <label for="password">Your password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Enter your password"
+              name="password"
+              [(ngModel)]="password"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn-block btn-info btn" (click)="signUp()">
+            Signup
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
